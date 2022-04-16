@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Bookshelf Apps Dicoding</title>
+        <link rel="stylesheet" href="assets/styles/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-class">
+                <h1>
+                    <img class="icon-logo" style="top:10px;" src="assets/image/icon-logo.png" alt="icon-logo">
+                    <span>Bookshelf Apps Dicoding</span>
+                </h1>
+                <p>Simpan Semua Riwayat Bukumu Bersama Bookshelf</p>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li> <a href="#input">Input Buku</a></li>
+                    <li> <a href="#status">Status Buku</a></li>
+                    <li> <a href="#cari">Cari Buku</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="content">
+                <article class="content-input" id="input">
+                    <section class="input-book">
+                        <h2>Masukkan Buku Baru</h2>
+                        <form id="inputBook">
+                            <div class="input">
+                                <label for="inputBookTitle">Judul Buku</label>
+                                <input id="inputBookTitle" type="text" placeholder="Masukkan Judul" required>
+                            </div>
+                            <div class="input">
+                                <label for="inputBookAuthor">Nama Penulis</label>
+                                <input id="inputBookAuthor" type="text" placeholder="Masukkan Nama Penulis" required>
+                            </div>
+                            <div class="input">
+                                <label for="inputBookYear">Tahun Terbit</label>
+                                <input id="inputBookYear" type="number" placeholder="Masukkan Tahun Terbit" required>
+                            </div>
+                            <div class="input">
+                                <label for="inputBookTime">Target Buku Selesai Dibaca</label>
+                                <input id="inputBookTime" type="date" required>
+                            </div>
+                            <div class="input_inline">
+                                <label for="inputBookIsComplete">Selesai dibaca</label>
+                                <input id="inputBookIsComplete" type="checkbox">
+                            </div>
+                            <button id="bookSubmit">Masukkan Buku ke Rak <span id="bookType"><strong>Belum Dibaca</strong></span></button>
+                        </form>
+                    </section>
+                </article>
+
+                <article class="content-notread" id="status">
+                    <section class="book_shelf">
+                        <h2>Belum Selesai Dibaca</h2>
+                        <div id="incompleteBookShelfList" class="book_list">                          
+                        </div>
+                    </section>
+                </article>
+
+                <article class="content-read" id="status">
+                    <section class="book_shelf">
+                        <h2>Selesai Dibaca</h2>
+                        <div id="completeBookShelfList" class="book_list">
+                        </div>
+                    </section>
+                </article>
+            </div>
+
+            <aside>
+                <article class="content_search" id="cari">
+                    <section class="search_section" id="searchSection">
+                        <h2>Cari Buku</h2>
+                        <form id="searchBook">
+                            <label for="searchBookTitle">Keyword</label>
+                            <input id="searchBookTitle" type="text" placeholder="Masukkan Judul Buku">
+                            <button id="searchSubmit" type="submit"><img class="icon-cari" style="top:10px;" src="assets/image/icon-cari.png" alt="icon-cari">&nbsp;
+                            <span>Cari</span></button>
+                        </form>                   
+                        <div id="searchResult" class="book_list" style="width: 100%"></div>
+                    </section>
+                </article>           
+            </aside>
+        </main>
+
+        <footer>
+            <p>Bookshelf Apps Dicoding &#169; 2022 | All rights Reserved</p>
+        </footer>
+
+        <script src="assets/scripts/script.js"></script>
+        <script src="assets/scripts/dom.js"></script>
+        <script src="assets/scripts/storage.js"></script>  
+        <script src="assets/scripts/search.js"></script>
+    </body>
+</html>

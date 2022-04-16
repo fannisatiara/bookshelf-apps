@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    display: block;
+    scroll-behavior: smooth;
+}
+
+head{
+    display: none;
+}
+
+body{
+    display: block;
+    background-color: #7C99AC;
+}
+
+body, input, button {
+    font-family: 'Battambang', cursive;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+header {
+    display: inline;
+}
+
+footer{
+    padding: 20px;
+    color: black;
+    background-color: #D3DEDC;
+    text-align: center;
+    font-weight: bold;
+}
+
+.nav-bar{
+    background-color: #92A9BD;
+    padding: 5px;
+    position: sticky;
+    opacity: 0.5;
+    filter: alpha(opacity=60);
+    top: 0;
+    z-index: 999;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+}
+
+nav li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.clear{
+    clear: left;
+}
+
+.header-class{
+    font-size: 15px;
+    padding: 30px;
+    background-color: #D3DEDC;
+    text-align: center;
+    color: black;
+}
+
+main{
+    max-width: 600px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 16px;
+}
+
+.input-book{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    border: 5px solid black;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.input-book>h2{
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.input-book>form>.input{
+    margin: 8px 0;
+}
+
+.input-book>form>button{
+    background-color: #495371;
+    color: white;
+    border: 2px black solid;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.input-book>form>button:hover {
+	border: 4px #1C658C solid;
+}
+
+.input-book>form>#bookSubmit {
+    background: #495371;
+    color: #fff;
+    padding: 8px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.input-book>form>.input>input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.input-book>form>.input>label {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.input-book>form>.input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input-book>form>.input_inline>label {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.book_shelf {
+    margin: 35px 0 0 0;
+    border: 5px solid black;
+    border-radius: 15px;
+    padding: 24px;
+    background: #fff;
+}
+
+.book_shelf>h2 {
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.book_shelf>.book_list>.book_item {
+    padding: 16px;
+    border: 2px solid #92A9BD;
+    border-radius: 15px;
+    margin: 10px 0;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book_shelf>.book_list>.book_item:hover{
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+    background-size: contain;
+}
+
+.book_shelf>.book_list>.book_item>.info>h3, p {
+    margin: auto;
+}
+
+.book_shelf>.book_list>.book_item>.action {
+    display: block;
+    align-items: center;
+}
+
+.book_shelf>.book_list>.book_item>.action>button {
+    border: 0;
+    padding: 5px;
+    margin: 0 10px 0 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.search_section{
+    margin: 35px 0 0 0;
+    border: 5px solid black;
+    padding: 24px;
+    border-radius: 15px;
+    align-items: center;
+    background: #fff;
+}
+
+.search_section>h2{
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search_section>form>label {
+  display: flex;
+  align-items: center;
+}
+
+.search_section>form>input {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.search_section>form>button {  
+  background-color: #495371;
+  border: 2px black solid;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+  width: 30%;
+  cursor: pointer;
+}
+
+.search_section>form>button:hover {
+	border: 2px #1C658C solid;
+}
+
+.search_section>form>label {
+  color:rgb(0, 0, 0);
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.icon-logo{
+    height: 30px;
+	width: 28px;
+	padding-top: 4px;
+	background-size: cover;
+    margin: 0 auto;
+}
+
+.icon-cari{
+    height: 20px;
+	width: 18px;
+	padding-top: 4px;
+	background-size: cover;
+	filter: invert(100%);
+    margin: 0 auto;
+}
+
+.checklist {
+    background: url('../image/checklist.png');
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.checklist:hover {
+    -webkit-transform: scale(1.09);
+    transform: scale(1.09);
+    background-size: contain;
+}
+
+.delete {
+    background: url('../image/delete.png');
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.delete:hover {
+    -webkit-transform: scale(1.09);
+    transform: scale(1.09);
+    background-size: contain;
+}
+
+.undo {
+    background: url('../image/undo.png');
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo:hover {
+    -webkit-transform: scale(1.09);
+    transform: scale(1.09);
+    background-size: contain;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+ }
+ 
+@media only screen and (max-width: 300px) {
+     .text {
+         font-size: 11px
+     }
+}
